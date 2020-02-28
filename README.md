@@ -40,11 +40,18 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] What is the purpose of using _sessions_?
 
+    to allow for our user's data to persist throughout reloads making a much better user experience
+
 - [ ] What does bcrypt do to help us store passwords in a secure manner.
+    
+    hashes passwords (usually many times) to ensure the user's password is protected from hackers
 
 - [ ] What does bcrypt do to slow down attackers?
 
+    hashs the password 2 to the x power, x being the value we send, which moves the speed that hackers can hach into account from miliseconds to seconds, which doesnt sound like much, but when using rainbow tables to attack this can be the difference between a few days and many years
+
 - [ ] What are the three parts of the JSON Web Token?
+payload, secrets, options payload is where we store our user.id(sub) as well as any other data we want access to(not sensitive) and the options are things like how long we want a user's session to last, secrets, usually stored as an enviornment variable allow the decoding of jwt in client-server relations
 
 ## Minimum Viable Product
 
